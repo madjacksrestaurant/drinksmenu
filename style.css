@@ -1,0 +1,205 @@
+/* GLOBAL */
+
+html, body {
+	width: 100%!important;
+	height: 100%!important;
+	max-width: 100%;
+	overflow-x: hidden;
+	position: relative!important;
+
+	background-color: var(--loading-body-color);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+:root {
+	--fifty-color: #141414;
+	--thirty-color: #C2F05D;
+	--ten-color: white;
+	--loading-body-color: black;
+	--body-color: #080808;
+}
+
+/* LOADING */
+
+.loading {
+	position: absolute;
+	background-color: black;
+	
+	width: 100%;
+	height: 100%;
+	
+	z-index: 999!important;
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -60%);
+		
+	width: 60%;
+}
+
+/* MULTIREFERENCE ELEMENTS */
+
+.break {
+	position: absolute;
+	left: 7.5%;
+	top: 25%;
+	
+	background-color: var(--thirty-color);
+
+	width: 75px;
+	height: 6.5px;
+}
+
+.split {
+	position: absolute;
+	left: 7.5%;
+	top: 52.5%;
+
+	color: var(--thirty-color);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 0.95em;
+	font-weight: 500;
+
+	width: 75px;
+	height: 6.5px;
+}
+
+.category {
+	position: absolute;
+	left: 7.5%;
+	top: 40%;
+
+	color: var(--thirty-color);
+	font-family: "main";
+	font-size: 3em;
+	font-weight: 100;
+	text-decoration: none;
+}
+
+.container {
+	position: absolute;
+	left: 7.5%;
+	top: 60%;
+	
+	width: 75%;
+	height: 30%;
+}
+
+.container_title {
+	color: var(--ten-color);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+/* STYLESHEET */
+
+.drink_1 {
+	position: absolute;
+	right: 2.5%;
+
+	width: 45%;
+	max-width: 100%;
+	height: auto;
+}
+
+.phone_vector {
+	position: absolute;
+	left: 7.5%;
+	top: 30%;
+
+	width: 25px;
+	height: auto;
+}
+
+.globe_vector {
+	position: absolute;
+	left: 7.5%;
+	top: 35%;
+
+	width: 25px;
+	height: auto;
+}
+
+/* ^ IMAGES ^ */
+
+.title {
+	position: absolute;
+	left: 7.5%;
+	top: 3.5%;
+
+	-webkit-animation: glow 0.75s ease-in-out infinite alternate;
+	-moz-animation: glow 0.75s ease-in-out infinite alternate;
+	animation: glow 0.75s ease-in-out infinite alternate;
+	
+	color: var(--thirty-color);
+	font-family: "main";
+	font-size: 3em;
+	font-weight: 500;
+}
+
+.subtitle {
+	position: absolute;
+	left: 7.5%;
+	top: 13.5%;
+
+	-webkit-animation: glow 0.75s ease-in-out infinite alternate;
+	-moz-animation: glow 0.75s ease-in-out infinite alternate;
+	animation: glow 0.75s ease-in-out infinite alternate;
+
+	color: var(--thirty-color);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+.phone_number {
+	position: absolute;
+	left: 17.5%;
+	top: 30%;
+	
+	color: var(--ten-color);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 0.95em;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.website_link {
+	position: absolute;
+	left: 17.5%;
+	top: 35.5%;
+
+	color: var(--ten-color);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 0.95em;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+/* ^ HEADERS, TEXT ^ */
+
+
+/* ANIMATIONS */
+
+@keyframes glow {
+	from {
+		text-shadow: 0 0 1.5px rgba(194, 240, 93, 0.6), 0 0 3px rgba(194, 240, 93, 0.6), 0 0 6px rgba(194, 240, 93, 0.6);
+	}
+	to {
+		text-shadow: 0 0 3px rgba(194, 240, 93, 0.6), 0 0 6px rgba(194, 240, 93, 0.6), 0 0 12px rgba(194, 240, 93, 0.6);
+	}
+}
+
+/* FONT FACES */
+@font-face {
+	font-family: "main";
+	src: url("/font_data/main.woff2"),
+		url("/font_data/main.woff");
+}
